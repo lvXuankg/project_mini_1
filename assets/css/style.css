@@ -362,6 +362,41 @@
 .section-three .box2:hover img{
     transform: scale(1.1);
 }
+@media (max-width: 992px){
+    .section-three .inner-wrap{
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .section-three .inner-wrap .box1{
+        width: 100%;
+        padding: 2rem 2rem;
+    }
+    .section-three .box1 .inner-title{
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+    }
+    .section-three .box1 .inner-content{
+        font-size: 40px;
+        padding: 0;
+        margin: 0;
+    }
+    .section-three .box2{
+        width: 100%;
+        display: flex;
+        padding: 0;
+        padding: 4rem;
+    }
+    .section-three .box2 img{
+        justify-content: center;
+    }
+}
+@media (max-width: 768px){
+    .section-three .box2{
+        padding: 2rem;
+    }
+}
 /* End Section Three  */
 /* Section Four  */
 .section-four{
