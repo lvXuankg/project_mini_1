@@ -2,3 +2,4 @@
 - Code khá ngu
 - Code dài, không biết sử dụng lại code mà code lại phần mới khiến code dài tới 700 dòng code
 - Đợi pro rồi sửa lại(hoặc không)
+- Chưa responsive lại giao diện khác ngoài laptop
