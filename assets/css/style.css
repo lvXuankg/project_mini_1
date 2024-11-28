@@ -241,6 +241,7 @@
     justify-content: space-between;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
 }
 .section-two .box2 .inner-list ul li{
     display: flex;
@@ -255,12 +256,59 @@
 .section-two .box2 .inner-list ul li i{
     font-size: 35px;
     color: var(--color-three);
+    transition: all 0.5s;
 }
 .section-two .inner-desc{
     font-size: 18px;
     color: var(--color-text-3);
     line-height: 1.5;
     margin-bottom: 25px;
+}
+.section-two .box2 .inner-list ul li:hover i{
+    transform: scale(1.1);
+}
+.section-two .box2 .inner-list ul li:hover p{
+    text-decoration: underline;
+}
+@media (max-width: 1200px){
+    .section-two .box2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-two .box2 .inner-title{
+        text-align: center;
+    }
+    .section-two .box2 .inner-list ul{
+        justify-content: space-around;
+    }
+    .section-two .box2 .inner-list ul li{
+        margin-bottom: 2rem;
+    }
+}
+@media (max-width: 992px){
+    .section-two .inner-wrap{
+        flex-wrap: wrap;
+    }
+    .section-two .box1{
+        width: 100%;
+    }
+    .section-two .box2{
+        padding: 2rem 0;
+        width: 100%;
+    }
+    .section-two .box2 .inner-list{
+        width: 100%;
+    }
+    .section-two .box2 .inner-list ul li{
+        margin: 0;
+    }
+}
+@media (max-width: 576px){
+    .section-two .box2 .inner-list ul li{
+        margin-bottom: 2rem;
+    }
 }
 /* End Section Two  */
 /* Section Three  */
