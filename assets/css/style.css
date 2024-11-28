@@ -2,8 +2,7 @@
 .header{
     display: flex;
     /* padding-top: 30px; */
-    padding-left: 45px;
-    padding-right: 45px;
+    padding: 0 1rem;
     background: var(--color-one);
     justify-content: space-between;
     align-items: center;
@@ -13,7 +12,7 @@
     position: sticky;
     top: 0;
     left: 0;
-
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
 }
 .header .inner-logo a{
     display: flex;
@@ -60,6 +59,34 @@
     border-radius: 15px;
     justify-content: center;
     align-items: center;
+}
+.header .inner-menu{
+    display: none;
+    font-size: 30px;
+}
+@media (max-width: 992px){
+    .header{
+        padding: 1rem;
+    }
+    .header .inner-pages, .header .inner-contacts{
+        display: none;
+    }
+    .header .inner-menu{
+        display: block;
+    }
+}
+@media (max-width: 576px){
+    .header .inner-logo img{
+        width: 40px;
+        height: auto;
+    }
+    .header .inner-logo span{
+        font-size: 16px;
+        margin-left: 5px;
+    }
+    .header .inner-menu{
+        font-size: 20px;
+    }
 }
 /* End Header  */
 /* Button  */
