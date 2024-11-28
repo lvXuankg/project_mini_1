@@ -280,11 +280,17 @@
     .section-two .box2 .inner-title{
         text-align: center;
     }
+    .section-two .box2 .inner-list{
+        padding: 0 3rem;
+    }
     .section-two .box2 .inner-list ul{
         justify-content: space-around;
     }
     .section-two .box2 .inner-list ul li{
         margin-bottom: 2rem;
+    }
+    .section-two .box2 .inner-desc{
+        text-align: center;
     }
 }
 @media (max-width: 992px){
@@ -300,6 +306,7 @@
     }
     .section-two .box2 .inner-list{
         width: 100%;
+        padding: 0;
     }
     .section-two .box2 .inner-list ul li{
         margin: 0;
