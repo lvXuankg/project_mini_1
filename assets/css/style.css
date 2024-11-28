@@ -144,8 +144,9 @@
 /* End Button  */
 /* Section One  */
 .section-one{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     width: 100%;
-    aspect-ratio: 16/6;
     background-repeat: no-repeat;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../images/background1.jpg);
     background-size: cover;
@@ -179,6 +180,14 @@
 }
 .section-one .button1{
     margin-right: 17px;
+}
+@media (max-width: 768px){
+    .section-one .inner-wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 /* End Section One  */
 /* Section Two  */
