@@ -733,10 +733,11 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .section-eight .box .inner-box{
-    width: 350px;
-    height: 400px;
+    width: calc(100%/3 - 2rem);
+    /* height: 400px; */
     display: flex;
     flex-direction: column;
     background: #fff;
@@ -758,7 +759,7 @@
     position: relative;
 }
 .section-eight .box .inner-box .inner-boxC img{
-    width: 25%;
+    height: 100%;
     transition: all 0.3s;
     aspect-ratio: 1;
     object-fit: cover;
@@ -787,6 +788,21 @@
     font-size: 55px;
     top: -40px;
     right: 0;
+}
+@media (max-width: 1200px){
+    .section-eight .box{
+        justify-content: space-around;
+    }
+    .section-eight .box .inner-box{
+        width: calc(50% - 2rem);
+        margin: 2rem 0;
+    }
+}
+@media (max-width: 768px){
+    .section-eight .box .inner-box{
+        width: 100%;
+        margin: 2rem 0;
+    }
 }
 /* End Section Eight  */
 /* Section Nine  */
