@@ -927,6 +927,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .section-ten .inner-wrap .inner-form .form-item{
     width: calc(100%/3 - 10px);
@@ -953,7 +954,19 @@
     font-weight: 800;
     margin-left: auto;
 }
-
+@media (max-width: 768px){
+    .section-ten .inner-wrap .inner-form .form-item{
+        width: 100%;
+        margin: 0.2rem 0;
+    }
+    .section-ten .inner-wrap .inner-desc{
+        font-size: 38px;
+    }
+    .section-ten .inner-wrap .inner-form .form-submit{
+        margin-left: 0;
+        margin-right: auto;
+    }
+}
 /* End Section Ten  */
 /* Footer  */
 .footer{
