@@ -603,10 +603,10 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    
+    flex-wrap: wrap;
 }
 .section-seven .box .inner-box{
-    width: 250px;
+    width: calc(100%/4 - 25px);
     height: 400px;
     background-color: #fff;
     display: flex;
@@ -618,16 +618,19 @@
 .section-seven .box .inner-avatar{
     width: 100%;
     height: 50%;
-    padding: 45px;
-    
+    display: block;
+    padding: 1rem;
+    /* overflow: hidden; */
+    text-align: center;
 }
 .section-seven .box .inner-avatar img{
-    aspect-ratio: 3/3;
-    width: 100%;
+    aspect-ratio: 1;
+    height: 100%;
     object-fit: cover;
     border-radius: 50%;
     overflow: hidden;
     transition: all 0.6s;
+    
 }
 .section-seven .box .inner-avatar:hover img{
     transform: scale(1.1);
@@ -637,7 +640,7 @@
     margin-top: 35px;
     font-size: 28px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 0.7rem;
 }
 .section-seven .box .inner-box .inner-field{
     font-size: 17px;
@@ -653,6 +656,7 @@
     list-style-type: none;  
     display: flex;
     width: 100%;
+    height: auto;
     margin-top: auto;
     margin-bottom: 0;
     padding-left: 0;
@@ -660,18 +664,51 @@
     justify-content: center;
     
 }
-.section-seven .box .inner-wrap ul li{
-    padding: 18px;
-    margin-left: 5px;
-    margin-right: 5px;
+
+.section-seven .box .inner-wrap ul li a{
+    display: block;
+    font-size: 15px; 
+    padding: 0.8rem;
     background-color: var(--color-one);
     border-radius: 15px 15px 0 0;
+    margin: 0 0.4rem;
     transition: all 0.3s;
-
 }
-.section-seven .box .inner-wrap ul li:hover{
+.section-seven .box .inner-wrap ul li a i{
+    line-height: 1;
+    display: flex;
+    width: 16px;
+    height: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-seven .box .inner-wrap ul li a:hover{
     color: #fff;
     background-color: var(--color-two);
+}
+@media (max-width: 992px){
+    .section-seven .box .inner-box{
+        width: calc(100%/3 - 25px);
+        margin-bottom: 2rem;
+    }
+    .section-seven .box{
+        justify-content: space-around;
+    }
+}
+@media (max-width: 768px){
+    .section-seven .box .inner-box{
+        width: calc(100%/2 - 20px);
+        margin-bottom: 2rem;
+    }
+    .section-seven .box{
+        justify-content: space-between;
+    }
+}
+@media (max-width: 576px){
+    .section-seven .box .inner-box{
+        width: 100%;
+    }
 }
 /* End Section Seven  */
 /* Section Eight  */
