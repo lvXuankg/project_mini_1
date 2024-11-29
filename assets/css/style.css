@@ -828,7 +828,15 @@
     border-radius: 15px;
     align-items: center;
     padding: 0 45px;
+    flex-wrap: wrap;
 }
+.section-nine .inner-foot .box .inner-button{
+    display: inline-flex;
+}
+.section-nine .inner-foot .box .inner-box{
+    margin: 0 0.5rem;
+}
+
 .section-nine .inner-foot .inner-name{
     color: var(--color-text-3);
     margin-bottom: 15px;
@@ -836,6 +844,41 @@
 .section-nine .inner-foot .inner-desc{
     font-size: 19px;
     font-weight: 600;
+}
+.section-nine .inner-foot .box a{
+    display: block;
+}
+@media (max-width: 992px){
+    .section-nine .inner-foot .box{
+        height: auto;
+        padding: 1rem;
+    }
+    .section-nine .inner-foot .box .inner-box{
+        margin: 0 1rem;
+    }
+}
+@media (max-width: 768px){
+    .section-nine .inner-foot .box{
+        height: auto;
+        padding: 1rem;
+    }
+    .section-nine .inner-foot .box .inner-box{
+        width: 50% ;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    .section-nine .inner-foot .box .inner-button{
+        width: 100%;
+        display: inline-flex;
+    }
+    .section-nine .inner-foot{
+        height: 200px;
+    }
+}
+@media (max-width: 576px){
+    .section-nine .inner-foot{
+        height: 220px;
+    }
 }
 /* End Section Nine  */
 /* Section Ten  */
