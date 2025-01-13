@@ -1,5 +1,0 @@
-- là project clone web lần 1, thời gian 1.5 ngày
-- Code khá ngu
-- Code dài, không biết sử dụng lại code mà code lại phần mới khiến code dài tới 1000 dòng code
-- Đợi pro rồi sửa lại(hoặc không)
-- Đã reponsive lại hết
